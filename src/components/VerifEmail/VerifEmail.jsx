@@ -9,8 +9,8 @@ const VerifEmail = () => {
     const email = useRef('');
     const Connexion = () => {
         dispatch(okemail(email.current.value));
-        const isConnected = email.current.value === 'sebreyes222@gmail.com'; 
-    if (isConnected) {
+        const connect = email.current.value === 'sebreyes222@gmail.com'; 
+    if (connect) {
             navigate('/bienvenue');
         }
     };

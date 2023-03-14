@@ -4,13 +4,13 @@ export const VerifSlice = createSlice({
     name: "verif", 
     initialState: {
         value: "sebreyes222@gmail.com",
-        isConnected: false
+        connect: false
     },
     reducers: {
         okemail: (state, action) => {
             if (state.value === action.payload) {
                 console.log("bienvenue");
-                return { state, isConnected: true };
+                return { state, connect: true };
             } else {
                 alert('mauvais email')
             }
