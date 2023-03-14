@@ -20,6 +20,7 @@ const VerifEmail = () => {
         <div>
             <input type="text" ref={email} />
             <button onClick={handleConnexion}>Connexion</button>
+
     </div>
     );
 };

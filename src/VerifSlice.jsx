@@ -10,7 +10,7 @@ export const VerifSlice = createSlice({
         okemail: (state, action) => {
             if (state.value === action.payload) {
                 console.log("bienvenue");
-                return { ...state, isConnected: true };
+                return { state, isConnected: true };
             }
             return state;
             }
