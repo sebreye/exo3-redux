@@ -11,6 +11,8 @@ export const VerifSlice = createSlice({
             if (state.value === action.payload) {
                 console.log("bienvenue");
                 return { state, isConnected: true };
+            } else {
+                alert('mauvais email')
             }
             return state;
             }

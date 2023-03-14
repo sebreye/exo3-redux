@@ -7,7 +7,7 @@ const VerifEmail = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const email = useRef('');
-    const handleConnexion = () => {
+    const Connexion = () => {
         dispatch(okemail(email.current.value));
         const isConnected = email.current.value === 'sebreyes222@gmail.com'; 
     if (isConnected) {
@@ -19,7 +19,7 @@ const VerifEmail = () => {
     return (
         <div>
             <input type="text" ref={email} />
-            <button onClick={handleConnexion}>Connexion</button>
+            <button onClick={Connexion}>Connexion</button>
 
     </div>
     );
