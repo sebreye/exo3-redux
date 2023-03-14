@@ -10,11 +10,11 @@ export const VerifSlice = createSlice({
         okemail: (state, action) => {
             if (state.value === action.payload) {
                 console.log("bienvenue");
-                return { state, connect: true };
-            } else {
-                alert('mauvais email')
+                return {...state, connect: true };
+            } else{
+                alert('invalid email')
+                return{...state, connect: false}
             }
-            return state;
             }
     }
 })
